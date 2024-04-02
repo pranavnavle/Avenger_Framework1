@@ -40,6 +40,7 @@ public void initialize()  // Create method for initialize for browser
 	if(browser.equalsIgnoreCase(browser)) 
 	{
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}else if(browser.equalsIgnoreCase(browser))
 	{
 		driver = new EdgeDriver();

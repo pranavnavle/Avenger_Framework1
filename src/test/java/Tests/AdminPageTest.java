@@ -24,5 +24,22 @@ public class AdminPageTest extends BasePage{
 		ap.clickOnAdminPage();
 	}
 	
-
+	@Test
+	public void verifySearchSystemUsers() throws InterruptedException{
+ 		ap.clickOnAdminPage();
+		ap.searchSystemUser();
+//		ap.selectAdminuserRole();
+//		ap.enterEmployeeName();
+//		ap.selectStatus();
+//		ap.clickOnsubmitButton();
+//		
+	}
+    @Test
+    public void addUserRole() throws InterruptedException {
+    	ap.clickOnAdminPage();
+    	ap.addUserSetup();
+//    	ap.addUser();
+//    	ap.selectUserRole();
+//    	ap.enterEmployeeName1();
+    }
 }
